@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[Company Name] Gadgets</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/styles.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: 0, transform: 'translateY(40px)' },
+                            '100%': { opacity: 1, transform: 'translateY(0)' },
+                        },
+                        zoomIn: {
+                            '0%': { opacity: 0, transform: 'scale(0.9)' },
+                            '100%': { opacity: 1, transform: 'scale(1)' },
+                        }
+                    },
+                    animation: {
+                        fadeInUp: 'fadeInUp 0.8s ease-out both',
+                        zoomIn: 'zoomIn 0.7s ease-out both',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white text-gray-800">
+
+
+    <header class="shadow sticky top-0 bg-white z-50 animate-fadeInUp">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-indigo-700">[Company Name]</h1>
+            <button id="menu-toggle" class="md:hidden text-2xl text-indigo-700 focus:outline-none">
+                &#9776;
+            </button>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#home" class="hover:text-indigo-700 transition duration-300">Home</a>
+                <a href="#products" class="hover:text-indigo-700 transition duration-300">Products</a>
+                <a href="#about" class="hover:text-indigo-700 transition duration-300">About</a>
+                <a href="#contact" class="hover:text-indigo-700 transition duration-300">Contact</a>
+            </nav>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+            <a href="#home" class="block py-2 hover:text-indigo-700">Home</a>
+            <a href="#products" class="block py-2 hover:text-indigo-700">Products</a>
+            <a href="#about" class="block py-2 hover:text-indigo-700">About</a>
+            <a href="#contact" class="block py-2 hover:text-indigo-700">Contact</a>
+        </div>
+    </header>
+
+
+    <section id="home" class="h-[600px] bg-indigo-50 pt-[200px] text-center animate-zoomIn">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">Future Tech, Delivered Today</h2>
+        <p class="text-lg md:text-xl text-gray-600 mb-6">Powering your world with the smartest gadgets</p>
+        <a href="#products"
+            class="bg-indigo-700 text-white text-xl px-9 py-3 rounded-xl hover:bg-indigo-600 transition duration-300">Explore
+        </a>
+    </section>
+
+
+    <section id="products" class="py-20  bg-white max-w-7xl mx-auto px-4">
+        <h3 class="text-4xl font-bold text-center mb-10 animate-fadeInUp">Our Gadgets</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <div
+                class="border p-4 rounded-xl shadow hover:shadow-lg hover:scale-105 transition duration-300 animate-fadeInUp">
+                <img src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c21hcnQlMjB3YXRjaHxlbnwwfHwwfHx8MA%3D%3D"
+                    alt="Smart Watch" class="rounded mb-4">
+                <h4 class="text-xl font-semibold mb-2">Smart Watch X2</h4>
+                <p class="text-gray-600">Stay connected, fit, and stylish all day.</p>
+            </div>
+            <div class="border p-4 rounded-xl shadow hover:shadow-lg hover:scale-105 transition duration-300
+                animate-fadeInUp">
+                <img src="https://images.unsplash.com/photo-1646646440235-acf2ee3310e0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fHdpcmVsZXNzJTIwZWFyYnVkfGVufDB8fDB8fHww"
+                    alt="Wireless Earbuds" class="rounded mb-4">
+                <h4 class="text-xl font-semibold mb-2">Wireless Earbuds Pro</h4>
+                <p class="text-gray-600">Experience immersive sound, wire-free.</p>
+            </div>
+            <div
+                class="border p-4 rounded-xl shadow hover:shadow-lg hover:scale-105 transition duration-300 animate-fadeInUp">
+                <img src="https://media.istockphoto.com/id/1214098172/photo/smart-home-hub-for-home-automation-on-wooden-desktop-with-copyspace.webp?a=1&b=1&s=612x612&w=0&k=20&c=XkA-ETZty0LU6OowQFWxnTdHKb_3Hqo4FCP2mbIOET8="
+                    alt="Home Hub" class="rounded mb-4" height="10hv">
+                <h4 class="text-xl font-semibold mb-2">Smart Home Hub</h4>
+                <p class="text-gray-600">Control your home with just your voice.</p>
+            </div>
+
+            <div class="border p-4 rounded-xl shadow hover:shadow-lg hover:scale-105 transition duration-300
+                animate-fadeInUp">
+                <img src="https://plus.unsplash.com/premium_photo-1728978926426-18fdb1d00e8a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c21hcnQlMjBzcGVha2VyfGVufDB8fDB8fHww"
+                    alt="Wireless Earbuds" class="rounded mb-4">
+                <h4 class="text-xl font-semibold mb-2">Smart Speakers</h4>
+                <p class="text-gray-600">Experience immersive sound, wire-free.</p>
+            </div>
+            <div class="border p-4 rounded-xl shadow hover:shadow-lg hover:scale-105 transition duration-300
+                animate-fadeInUp">
+                <img src="https://plus.unsplash.com/premium_photo-1729321201981-5ac62eb1a90b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHNtYXJ0JTIwc2VjdXJpdHklMjBjYW1lcmF8ZW58MHx8MHx8fDA%3D"
+                    alt="Home Hub" class="rounded mb-4" height="10hv">
+                <h4 class="text-xl font-semibold mb-2">Smart Security Cameras</h4>
+                <p class="text-gray-600">Giving you peace of mind, anytime, anywhere.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-gray-50 px-4 text-center animate-fadeInUp">
+        <div class="max-w-3xl mx-auto">
+            <h3 class="text-4xl font-bold mb-4">About [Company Name]</h3>
+            <p class="text-gray-700 text-lg">At [Company Name], we’re passionate about the future of technology and
+                how it enhances everyday life. Our mission is simple to bring you the latest and most innovative tech
+                gadgets that are smart, functional, and ahead of the curve.</p><br>
+
+            <p class="text-gray-700 text-lg"> Whether you're a tech enthusiast, a smart home lover, or someone just
+                looking for the perfect gadget
+                gift, we’ve got you covered. From cutting-edge wearables and smart accessories to productivity tools and
+                unique lifestyle devices, every product we feature is carefully curated for quality, value, and
+                innovation.</p><br>
+
+            <p class="text-gray-700 text-lg">We believe that technology should be accessible, exciting, and empowering.
+                That’s why we work hard to
+                keep our community informed with honest reviews, expert insights, and the latest trends, all in one
+                place.</p><br>
+
+            <p class="text-gray-700 text-lg">Join us on our journey as we explore the future, one gadget at a time.</p>
+
+
+        </div>
+    </section>
+
+    <section class="py-20 text-center animate-zoomIn">
+        <h3 class="text-4xl font-bold mb-10">Reviews from Our Clients</h3>
+        <div class="w-full max-w-3xl mx-auto overflow-hidden relative">
+
+            <div id="carousel" class="flex transition-transform duration-700 ease-in-out">
+
+                <div class="min-w-full text-center p-9 bg-indigo-50 rounded-xl shadow">
+                    <p class="text-lg italic">" Fast delivery and amazing tech support. Highly recommend."</p>
+                    <h4 class="text-xl font-semibold my-2">Maryam H</h4>
+                </div>
+
+                <div class="min-w-full text-center p-9 bg-indigo-50 rounded-xl shadow">
+                    <p class="text-lg italic">" The Smart Watch changed my routine completely. Love it."</p>
+                    <h4 class="text-xl font-semibold my-2">Muktar B</h4>
+                </div>
+
+                <div class="min-w-full text-center p-9 bg-indigo-50 rounded-xl shadow">
+                    <p class="text-lg italic">" Excellent quality and battery life. I'm impressed."</p>
+                    <h4 class="text-xl font-semibold my-2">Humulkhair B</h4>
+                </div>
+            </div>
+
+            <div class="absolute inset-0 flex items-center justify-between px-4">
+                <button id="prev" class="text-3xl text-black">&larr;</button>
+                <button id="next" class="text-3xl text-black">&rarr;</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-indigo-700 py-20 text-white text-center px-4 animate-fadeInUp">
+        <h3 class="text-4xl font-bold mb-4">Stay Updated</h3>
+        <p class="text-xl mb-6">Join our newsletter for new arrivals and tech tips.</p>
+        <form class="flex flex-col sm:flex-row justify-center max-w-md mx-auto">
+            <input type="email" placeholder="Enter your email" class="p-3 rounded-l-lg text-black w-full sm:w-auto">
+            <button type="submit"
+                class="bg-white text-indigo-600 font-semibold px-6 py-3 rounded-r-lg mt-4 sm:mt-0 hover:bg-gray-100 transition duration-300">Subscribe</button>
+        </form>
+    </section>
+
+
+    <section id="contact" class="py-20 bg-gray-50 px-4 animate-zoomIn">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-4xl font-bold text-center mb-8">Contact Us</h3>
+            <form class="grid gap-6">
+                <input type="text" placeholder="Your Name" class="p-4 rounded-xl border" required>
+                <input type="email" placeholder="Your Email" class="p-4 rounded-xl border" required>
+                <textarea placeholder="Your Message" rows="5" class="p-4 rounded-xl border" required></textarea>
+                <button type="submit"
+                    class="bg-indigo-700 text-white px-6 py-3 rounded-xl hover:bg-indigo-600 transition duration-300 w-fit mx-auto">Send
+                    Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-indigo-800 text-white text-center py-6">
+        <p class="mb-2">&copy; 2025 [Company Name]. All rights reserved.</p>
+        <div class="space-x-4">
+            <a href="#" class="hover:underline transition duration-300">Facebook</a>
+            <a href="#" class="hover:underline transition duration-300">Twitter</a>
+            <a href="#" class="hover:underline transition duration-300">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="index.js" charset="UTF-8"></script>
+</body>
+
+</html>
