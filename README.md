@@ -8,7 +8,7 @@ A responsive **frontend website** built with **HTML, Tailwind CSS, and JavaScrip
 * Product gallery with clean, grid-based layouts
 * Interactive UI with hover effects, and smooth transitions
 * Newsletter subscription form 
-*Customer reviews section 
+* Customer reviews section 
 * About & Contact pages with functional form UI
 
 ## Tech Stack
